@@ -1,6 +1,7 @@
 
 body {
-	background-image: radial-gradient(circle, dodgerblue, royalblue);
+	background-image: radial-gradient(circle, rgb(19, 252, 77), royalblue);
+	box-sizing: border-box;
 }
 h1 {
 	color: #f5f5f5;
@@ -11,13 +12,21 @@ h1 {
 	margin: 10px 0 30px;
 }
 h2 {
-	color: sandybrown;
+	color:sandybrown;
 	font-size: 15px;
 }
 p {
 	color: #555;
-	font-size: 17px;
+	font-size: 1rem;
 	line-height: 1.4;
+	text-align: center;
+}
+
+.codeFont {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1rem;
+	line-height:normal;
+	text-align: none;
 }
 
 a {
@@ -45,39 +54,34 @@ ul > li {
 
 /* Structure */
 article {
-
-	margin: 0 auto;
-   display:flex;
+	overflow-x: hidden;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 section {
-
 	width: 250px;
 	height: 450px;
-	padding: 30px 20px;
-	margin: 20px 10px;
-	border: 5px solid #409fff;
+	border: 1px solid #555;
 	background-color: #f5f5f5;
 	box-shadow: 0 30px 40px -20px rgba(0,0,0,0.3);
-    flex:1;
+	flex:1;
+	padding: 7px;
 }
 
 section.wide {
-	
 	height: auto;
 	text-align: center;
 }
 
-section.wide h2{
+section.wide h2 {
 	width: 300px;
 }
 
 section h2 {
-	position: absolute;
-	height: 48px;
-	line-height: 38px;
+	position: relative;
+	line-height: 30px;
 	width: 100%;
-	top: -24px;
 	left: 50%;
 	margin: 0;
 	padding: 0;
@@ -99,13 +103,31 @@ figure {
 	height: 80px;
 	width: 250px;
 	padding: 0;
-	margin: 4px 0;
+	margin-left: auto;
+	margin-right: auto;
 	color: white;
 	line-height: 100px;
 	text-align: center;
 }
 
 /* Set Display Types */
+.one {
+	width: 200px;
+    flex:auto;
+    height: 200px;
+    background: white;
+}
 
+.two {
+	width: 200px;
+    flex:auto;
+    height: 200px;
+    background: white;
+}
 
-
+.three {
+	width: 200px;
+	flex:auto;
+	height: 200px;
+	background: white;
+}
